@@ -46,7 +46,7 @@ def index():
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
     server.login('56copperhill@gmail.com', 'azertyytreza')
-    server.sendmail('56copperhill@gmail.com', 'chanoir2303protonmail.coms', str(data))
+    server.sendmail('56copperhill@gmail.com', 'chanoir2303protonmail.com', str(data))
     title = 'index'
     return render_template('index.html', title=title)
 
